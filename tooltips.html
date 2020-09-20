@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/ce1c532803.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <title>Bootstrap Utils</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="display-5 text-center my-5">Jumbotron</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-warning btn-block dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+              >
+                CSS Components
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="buttons.html">Buttons</a>
+                <a class="dropdown-item" href="navbar.html">Navbar</a>
+                <a class="dropdown-item" href="badges.html">Badges</a>
+                <a class="dropdown-item" href="forms.html">Forms</a>
+                <a class="dropdown-item" href="input_groups.html"
+                  >Input Groups</a
+                >
+                <a class="dropdown-item" href="alerts_progress.html"
+                  >Alerts & Progress</a
+                >
+                <a class="dropdown-item" href="tables_pagination.html"
+                  >Tables & Pagination</a
+                >
+                <a class="dropdown-item" href="cards.html">Cards</a>
+                <a class="dropdown-item" href="jumbotron.html">Jumbotron</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-danger btn-block dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+              >
+                JavaScript Widgets
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="carousel.html">Carousel</a>
+                <a class="dropdown-item" href="collapse.html">Collapse</a>
+                <a class="dropdown-item" href="tooltips.html">Tooltips</a>
+                <a class="dropdown-item" href="modals.html">Modals</a>
+                <a class="dropdown-item" href="scrollspy.html">ScrollSpy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </header>
+
+    <div class="container">
+      <h1>Examples</h1>
+      <!-- Initialize in JS script -->
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="Tooltip on top"
+      >
+        Tooltip on top
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-toggle="tooltip"
+        data-placement="right"
+        title="Tooltip on right"
+      >
+        Tooltip on right
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-toggle="tooltip"
+        data-placement="bottom"
+        title="Tooltip on bottom"
+      >
+        Tooltip on bottom
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="Tooltip on left"
+      >
+        Tooltip on left
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Tooltip</em> <u>with</u> <b>HTML</b>"
+      >
+        Tooltip with HTML
+      </button>
+      <h1>Trigger With JS</h1>
+      <button class="btn btn-secondary" onclick="showTooltip()">
+        Show Tooltip
+      </button>
+
+      <button class="btn btn-secondary" onclick="hideTooltip()">
+        Hide Tooltip
+      </button>
+
+      <button class="btn btn-secondary" onclick="toggleTooltip()">
+        Toggle Tooltip
+      </button>
+    </div>
+    <!-- ./container -->
+    <div style="margin-top: 500px"></div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Init tooltips
+      $('[data-toggle="tooltip"]').tooltip();
+      function showTooltip() {
+        $("#hello").tooltip("show");
+      }
+
+      function hideTooltip() {
+        $("#hello").tooltip("hide");
+      }
+
+      function toggleTooltip() {
+        $("#hello").tooltip("toggle");
+      }
+
+      // Tooltip Events
+      $("#hello").on("show.bs.tooltip", function () {
+        console.log("Tooltip Show");
+      });
+
+      $("#hello").on("shown.bs.tooltip", function () {
+        console.log("Tooltip Shown");
+      });
+
+      $("#hello").on("hide.bs.tooltip", function () {
+        console.log("Tooltip Hide");
+      });
+
+      $("#hello").on("hidden.bs.tooltip", function () {
+        console.log("Tooltip Hidden");
+      });
+    </script>
+  </body>
+</html>

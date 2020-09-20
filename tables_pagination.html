@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/ce1c532803.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <title>Bootstrap Utils</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="display-5 text-center my-5">Tables and Pagination</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-warning btn-block dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+              >
+                CSS Components
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="buttons.html">Buttons</a>
+                <a class="dropdown-item" href="navbar.html">Navbar</a>
+                <a class="dropdown-item" href="badges.html">Badges</a>
+                <a class="dropdown-item" href="forms.html">Forms</a>
+                <a class="dropdown-item" href="input_groups.html"
+                  >Input Groups</a
+                >
+                <a class="dropdown-item" href="alerts_progress.html"
+                  >Alerts & Progress</a
+                >
+                <a class="dropdown-item" href="tables_pagination.html"
+                  >Tables & Pagination</a
+                >
+                <a class="dropdown-item" href="cards.html">Cards</a>
+                <a class="dropdown-item" href="jumbotron.html">Jumbotron</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-danger btn-block dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+              >
+                JavaScript Widgets
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="carousel.html">Carousel</a>
+                <a class="dropdown-item" href="collapse.html">Collapse</a>
+                <a class="dropdown-item" href="tooltips.html">Tooltips</a>
+                <a class="dropdown-item" href="modals.html">Modals</a>
+                <a class="dropdown-item" href="scrollspy.html">ScrollSpy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </header>
+
+    <div class="container">
+      <h1 class="display-2">Tables</h1>
+      <h1>Examples</h1>
+      <table class="table mb-3">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jdoe@gmail.com</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Abdelmounaim</td>
+            <td>Azziza</td>
+            <td>abdelmounaim.azziza@outlook.fr</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Shannon</td>
+            <td>Williams</td>
+            <td>shannon@yahoo.com</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="mt-2">Dark Table</h2>
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Doe</td>
+            <td>John</td>
+            <td>@himail</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Smith</td>
+            <td>Diana</td>
+            <td>@boy</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>Mark</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      <h1>Thead Dark</h1>
+      <table class="table mb-3">
+        <thead class="thead-dark">
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jdoe@gmail.com</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Will</td>
+            <td>Johnson</td>
+            <td>will@yahoo.com</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Shannon</td>
+            <td>Williams</td>
+            <td>shannon@yahoo.com</td>
+          </tr>
+        </tbody>
+      </table>
+      <h1>STRIPED TABLE</h1>
+      <table class="table table-striped mb-3">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jdoe@gmail.com</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Will</td>
+            <td>Johnson</td>
+            <td>will@yahoo.com</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Shannon</td>
+            <td>Williams</td>
+            <td>shannon@yahoo.com</td>
+          </tr>
+        </tbody>
+      </table>
+      <h1>BORDERED TABLE</h1>
+      <table class="table table-bordered mb-3">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jdoe@gmail.com</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Will</td>
+            <td>Johnson</td>
+            <td>will@yahoo.com</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Shannon</td>
+            <td>Williams</td>
+            <td>shannon@yahoo.com</td>
+          </tr>
+        </tbody>
+      </table>
+      <h1>BORDERLESS TABLE</h1>
+      <table class="table table-borderless mb-3">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jdoe@gmail.com</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Will</td>
+            <td>Johnson</td>
+            <td>will@yahoo.com</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Shannon</td>
+            <td>Williams</td>
+            <td>shannon@yahoo.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+
+      <h1>HOVERABLE</h1>
+      <table class="table table-hover mb-3">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jdoe@gmail.com</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Will</td>
+            <td>Johnson</td>
+            <td>will@yahoo.com</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Shannon</td>
+            <td>Williams</td>
+            <td>shannon@yahoo.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h1>CONTEXTUAL CLASSES</h1>
+      <table class="table mb-3">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-success">
+            <th scope="row">1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jdoe@gmail.com</td>
+          </tr>
+          <tr class="table-danger">
+            <th scope="row">2</th>
+            <td>Will</td>
+            <td>Johnson</td>
+            <td>will@yahoo.com</td>
+          </tr>
+          <tr class="table-warning">
+            <th scope="row">3</th>
+            <td>Shannon</td>
+            <td>Williams</td>
+            <td>shannon@yahoo.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+
+      <h1>SMALL TABLE</h1>
+      <table class="table table-sm table-hover table-striped mb-3">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jdoe@gmail.com</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Will</td>
+            <td>Johnson</td>
+            <td>will@yahoo.com</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Shannon</td>
+            <td>Williams</td>
+            <td>shannon@yahoo.com</td>
+          </tr>
+        </tbody>
+      </table>
+      <h1>Responsive Tables</h1>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>John</td>
+              <td>Doe</td>
+              <td>jdoe@gmail.com</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Will</td>
+              <td>Johnson</td>
+              <td>will@yahoo.com</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Shannon</td>
+              <td>Williams</td>
+              <td>shannon@yahoo.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h1 class="display-2">Pagination</h1>
+      <h1>Examples</h1>
+      <nav aria-label="Page navigation example mb-3">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+      <h1>With Icons</h1>
+      <nav aria-label="Page navigation example mb-3">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Disables and Active</h1>
+      <nav aria-label="Page navigation example mb-3">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active">
+            <a class="page-link" href="#"
+              >2 <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- ./container -->
+    <div style="margin-top: 500px"></div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
